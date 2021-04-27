@@ -15,7 +15,7 @@ public class FormsPageTest extends TestBase {
 
     @BeforeClass
     public void setUp(){
-        initialization();
+        initialization("https://vuetifyjs.com/en/components/forms/");
         formsPage = new FormsPage();
     }
 
@@ -27,7 +27,6 @@ public class FormsPageTest extends TestBase {
     @Test
     public void addPersonalDetails(){
         formsPage.fillForm("Mateusz","Rzezniczak","rzezniczakmateusz@gmail.com");
-
         takeScreenShot("FormPage");
     }
 }

@@ -18,7 +18,7 @@ public class FormsPage extends TestBase {
     WebElement emailInput;
 
     /*** konstruktor ***/
-    public  FormsPage() {
+    public FormsPage() {
         PageFactory.initElements(driver,this);
     }
 

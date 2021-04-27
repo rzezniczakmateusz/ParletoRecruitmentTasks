@@ -14,11 +14,11 @@ public class TestBase {
     public static WebDriver driver;
     public static WebDriverWait wait;
 
-    public static void initialization(){
+    public static void initialization(String www){
         System.setProperty("webdriver.chrome.driver","src/main/resources/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("https://vuetifyjs.com/en/components/forms/");
+        driver.get(www);
     }
 
     public void takeScreenShot(String NazwaTestu) {
