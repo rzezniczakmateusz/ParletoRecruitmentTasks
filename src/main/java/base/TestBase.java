@@ -5,17 +5,20 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
 import java.io.IOException;
 
 public class TestBase {
     public static WebDriver driver;
+    public static WebDriverWait wait;
 
     public static void initialization(){
         System.setProperty("webdriver.chrome.driver","src/main/resources/chromedriver.exe");
         driver = new ChromeDriver();
-        driver.get("");
+        driver.manage().window().maximize();
+        driver.get("https://vuetifyjs.com/en/components/forms/");
     }
 
     public void takeScreenShot(String NazwaTestu) {
