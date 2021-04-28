@@ -25,9 +25,8 @@ public class MenusPageTest extends TestBase {
     }
 
     @Test
-    public void getOptionsLogs() throws InterruptedException{
+    public void getOptionsLogs() {
         menusPage.clickButton();
-        Thread.sleep(3000);
         menusPage.getOpiontsListText();
         takeScreenShot("MenusPage");
     }
