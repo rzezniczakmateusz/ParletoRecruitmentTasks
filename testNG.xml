@@ -4,8 +4,9 @@
 <suite name="Test 1.0">
     <test name="vuetifyjs">
         <classes>
-            <!--<class name="test.FormsPageTest" />-->
+            <class name="test.FormsPageTest" />
             <class name="test.AutocompletesPageTest" />
+            <class name="test.MenusPageTest" />
         </classes>
     </test>
 </suite>
